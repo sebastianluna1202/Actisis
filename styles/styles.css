@@ -264,7 +264,8 @@ header nav ul li a {
 .container .card h3 {
   font-size: 28px;
   font-weight: 300;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
+  min-height: 70px;
 }
 .container .card img {
   height: 140px;
@@ -625,8 +626,15 @@ footer ul li a:hover {
     width: 40px;
   }
   .container .card {
+    height: 450px;
     min-width: 100%;
     margin: 0 30px;
+  }
+  .container .card img {
+    height: 110px;
+  }
+  .container .card h3 {
+    max-width: 90%;
   }
   .curva-blanca {
     width: 100%;
@@ -652,7 +660,7 @@ footer ul li a:hover {
     align-self: center;
   }
   .section-6 h2 {
-    font-size: 56px;
+    font-size: 44px;
   }
   .section-6 form {
     width: 100%;
