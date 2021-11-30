@@ -544,8 +544,10 @@ footer ul li a:hover {
   header .logo {
     width: 60px;
     height: 60px;
+    margin-left: 24px;
   }
   header .menu-hamburguesa {
+    margin-right: 24px;
     padding: 14px;
     width: 60px;
     height: 60px;
@@ -580,6 +582,9 @@ footer ul li a:hover {
     font-size: 28px;
     text-align: center;
   }
+  .button {
+    width: 170px;
+  }
   .section-1 div p {
     font-size: 20px;
   }
@@ -610,9 +615,18 @@ footer ul li a:hover {
   .section-3 h2, .section-4 h2{
     font-size: 56px;
   }
+  .section-3 {
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .section-3 ,.section-4 {
+    overflow-x: hidden;
+  }
+  .flecha img {
+    width: 40px;
+  }
   .container .card {
     min-width: 100%;
-    margin: 0 10%;
+    margin: 0 30px;
   }
   .curva-blanca {
     width: 100%;
@@ -620,8 +634,13 @@ footer ul li a:hover {
     top: -50px;
   }
   .section-5 .stories-container .story {
+    padding: 20px;
     min-width: 300px;
     max-width: 85%;
+    column-gap: 10px;
+  }
+  .section-5 .stories-container .story img {
+    width: 90px;
   }
   .section-5 .stories-container .story:nth-child(1) {
     align-self: center;
