@@ -70,6 +70,7 @@ header nav ul li a {
   color: var(--black);
 }
 
+
 /* HERO */
 
 .hero {
@@ -471,7 +472,6 @@ footer ul li a:hover {
     justify-content: start;
     margin: 0;
   }
-  
   header .menu-hamburguesa {
     margin-right: 48px;
     padding: 18px;
@@ -571,7 +571,6 @@ footer ul li a:hover {
   }
   .hero > div >div a:last-child {
     display: none;
-
   }
   .hero div h1 {
     font-size: 56px;
@@ -621,8 +620,8 @@ footer ul li a:hover {
     top: -50px;
   }
   .section-5 .stories-container .story {
-    min-width: 85%;
-    max-width: 500px;
+    min-width: 300px;
+    max-width: 85%;
   }
   .section-5 .stories-container .story:nth-child(1) {
     align-self: center;
@@ -633,7 +632,6 @@ footer ul li a:hover {
   .section-5 .stories-container .story:nth-child(3) {
     align-self: center;
   }
-
   .section-6 h2 {
     font-size: 56px;
   }
@@ -663,7 +661,6 @@ footer ul li a:hover {
   }
   .redes-sociales p {
     text-align: center;
-    
   }
 }
 
