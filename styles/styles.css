@@ -36,7 +36,7 @@ header {
   transition: opacity 1s;
 }
 .header-active {
-  transition: 1s;
+  transition: opacity 1s;
   opacity: 1;
 }
 .header-hidden {
@@ -148,6 +148,7 @@ header nav ul li a {
   width: 70%;
   font-size: 36px;
   color: #ffffff;
+  font-weight: 300;
 }
 .section-1 .section-1-img {
   margin-top: 48px;
@@ -230,9 +231,6 @@ header nav ul li a {
   transition: .5s;
   cursor: pointer;
 }
-.izquierda img {
-  transform: rotate(-180deg);
-}
 .container {
   display: flex;
   overflow-x: scroll;
@@ -266,10 +264,12 @@ header nav ul li a {
   font-weight: 300;
   margin-bottom: 32px;
   min-height: 70px;
+  max-width: 85%;
 }
 .container .card img {
   height: 140px;
   margin-bottom: 24px;
+  max-width: 100%;
 }
 .section-4 {
   position: relative;
@@ -287,6 +287,7 @@ header nav ul li a {
 .section-5 {
   padding-bottom: 160px;
   background-color: var(--seccond-brand-color);
+  overflow-x: hidden;
 }
 .stories-container {
   margin: 0 auto;
@@ -296,9 +297,16 @@ header nav ul li a {
   row-gap: 36px;
 }
 .story {
+  opacity: 0;
   box-shadow: var(--shadow);
   display: grid;
   grid-template-columns: 1fr 2fr;
+  transform: translateX(100px);
+}
+.show-story {
+  transition: 1s;
+  opacity: 1;
+  transform: translateX(0px);
 }
 .story img {
   border-radius: 100%;
@@ -316,7 +324,19 @@ header nav ul li a {
 .section-5 .stories-container .story:nth-child(3) {
   align-self: end;
 }
+.section-5 .stories-container .story h3 {
+  font-size: 20px;
 
+}
+.section-5 .stories-container .story p {
+  font-weight: 300;
+  font-size: 20px;
+}
+.section-5 .stories-container .story small {
+  display: block;
+  margin-top: 16px;
+  font-size: 16px;
+}
 /* SECTION 6 */
 
 .section-6 {
@@ -384,7 +404,7 @@ form > div:nth-child(7) {
 footer {
   padding: 100px 200px;
   display: grid;
-  column-gap: 160px;
+  column-gap: 120px;
   grid-auto-flow: column;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 3fr 2fr;
@@ -527,11 +547,12 @@ footer ul li a:hover {
     height: 390px;
   }
   .container .card {
-    min-width: 45%;
-    margin-right: 10%;
+    min-width: 47%;
+    margin-right: 8%;
   }
   footer {
     padding: 100px 100px;
+    column-gap: 60px;
   }
   
 }
@@ -616,10 +637,10 @@ footer ul li a:hover {
   .section-3 h2, .section-4 h2{
     font-size: 56px;
   }
-  .section-3 {
-    grid-template-columns: 1fr 10fr 1fr;
+  .section-3, .section-4 {
+    grid-template-columns: 1fr 3fr 1fr;
   }
-  .section-3 ,.section-4 {
+  .section-3, .section-4 {
     overflow-x: hidden;
   }
   .flecha img {
@@ -631,7 +652,7 @@ footer ul li a:hover {
     margin: 0 30px;
   }
   .container .card img {
-    height: 110px;
+    height: 120px;
   }
   .container .card h3 {
     max-width: 90%;
@@ -692,3 +713,37 @@ footer ul li a:hover {
 }
 
 
+@media screen and (max-width:520px) {
+  .section-2 {
+    overflow-x: hidden;
+  }
+  .section-3, .section-4 {
+    grid-template-columns: 1fr 10fr 1fr;
+  }
+  .section-5 .stories-container .story h3 {
+    font-size: 18px;
+  
+  }
+  .section-5 .stories-container .story p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+  .section-5 .stories-container .story small {
+    font-size: 14px;
+  }
+
+}
+@media screen and (max-width:350px) {
+  .hexagon {
+    width: 300px;
+  }
+  .section-2 img {
+    width: 340px;
+
+  }
+  .section-3 h2, .section-4 h2 {
+    font-size: 48px;
+  }
+
+  
+}
